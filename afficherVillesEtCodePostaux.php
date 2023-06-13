@@ -1,6 +1,5 @@
 <?php
 
-require_once('bdd.php');
 require_once('header.php');
 
 $bdd=connexionBDD();

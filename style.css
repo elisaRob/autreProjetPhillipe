@@ -1,9 +1,37 @@
+:root{
+    --fontSizeTitre:calc(20px + 2vw);
+    --fontSizeContenu:calc(12px + 1vw)
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/**********************AFFICHER VILLE *************************************/
+
 .recupererVilleEtCodePostaux{
-    width:100%;
+    display:flex;
+    justify-content:center;
 }
+
+.recupererVilleEtCodePostaux table{
+    width:90%;
+    border-collapse:collapse;
+  
+   
+}
+
+.recupererVilleEtCodePostaux th{
+    font-size:var(--fontSizeTitre)
+}
+
+.recupererVilleEtCodePostaux td,th{
+    border:1px solid black;
+    padding:10px 0;
+    text-align:center;
+    font-size:var(--fontSizeContenu)
+}
+
+
