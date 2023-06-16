@@ -11,6 +11,58 @@
 
 /**************************INDEX.PHP ******************************/
 
+.containerIndex{
+    background-image:url(img/ville.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.containerIndex button{
+    font-size:var(--fontSizeContenu);
+    margin-bottom:10px;
+    background-color:transparent;
+    border:2px solid #fff;
+    padding:10px 20px;
+    backdrop-filter:blur(5px);
+    cursor:pointer;
+    overflow:hidden;
+    
+
+}
+
+.containerIndex button:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transform:translateX(-100%);
+    background-color:white;
+    z-index:-1;
+    transition:transform 0.5s;
+}
+
+.containerIndex button:hover:before{
+    transform:translateX(0)
+}
+
+.containerIndex button a{
+    text-decoration:none;
+    color:white;
+    position:relative;
+    z-index:5;
+
+}
+
+.containerIndex button:hover a{
+    color:#012e43
+}
 
 
 /**********************AFFICHER VILLE *************************************/
@@ -38,4 +90,35 @@
     font-size:var(--fontSizeContenu)
 }
 
+/*************************************FORMULAIRE INSCRIPTION.PHP ****************************/
 
+.containerFormulaireInscriptionNouvelleVille{
+    background-image: url(img/ville1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    
+}
+
+.containerFormulaireInscriptionNouvelleVille form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height:100vh;
+    justify-content:center;
+}
+
+.containerFormulaireInscriptionNouvelleVille form label{
+    backdrop-filter:blur(5px);
+    color:#fff
+}
+
+.containerFormulaireInscriptionNouvelleVille form input{
+    margin-bottom:10px;
+    text-align:center;
+    outline:none;
+    transition:background-color 0.5s
+}
+
+.containerFormulaireInscriptionNouvelleVille form input:focus{
+    background-color:#0a9496
+}
