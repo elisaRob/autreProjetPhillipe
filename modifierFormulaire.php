@@ -32,13 +32,7 @@ if($ville){
             <input type="text" value="<?=$ville['ville_code_postal']?>" name="codePostalVille" id="codePostalVille">
 
             <button type="submit">Validez</button>
-
         </form>
-      
-
-
     </div>
-
-
 <?php
 }

@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
 :root{
     --fontSizeTitre:calc(20px + 2vw);
-    --fontSizeContenu:calc(12px + 1vw)
+    --fontSizeContenu:calc(12px + 1vw);
+    --fontFamilyCursive:'Dancing Script', cursive;
 }
 
 *{
@@ -9,13 +12,34 @@
     box-sizing:border-box;
 }
 
+/**********************GLOBAL*********************************/
+
+.global{
+    padding:15px 0;
+    font-family:var(--fontFamilyCursive);
+    font-size:var(--fontSizeContenu);
+    color:white;
+    backdrop-filter:blur(2px)
+}
+
+.global a{
+    display:inline-block;
+    text-decoration:none;
+    transition:transform 0.5s;
+
+}
+
+.global a:hover{
+    transform:scale(1.1)
+}
+
 /**************************INDEX.PHP ******************************/
 
 .containerIndex{
     background-image:url(img/ville.jpg);
     background-size:cover;
     background-repeat:no-repeat;
-    height:100vh;
+    min-height:100vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -70,6 +94,12 @@
 .recupererVilleEtCodePostaux{
     display:flex;
     justify-content:center;
+    flex-direction:column;
+    background-image: url(img/ville3.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    min-height:100vh;
+    padding-top:10px
 }
 
 .recupererVilleEtCodePostaux table{
@@ -101,14 +131,17 @@
 
 .containerFormulaireInscriptionNouvelleVille h2{
     text-align:center;
-    color:#fff
+    color:#fff;
+    font-family:var(--fontFamilyCursive);
+    padding-top:30px;
+    font-size:var(--fontSizeTitre)
 }
 
 .containerFormulaireInscriptionNouvelleVille form{
     display:flex;
     flex-direction:column;
     align-items:center;
-    height:100vh;
+    min-height:100vh;
     justify-content:center;
 }
 
@@ -119,7 +152,7 @@
 }
 
 .containerFormulaireInscriptionNouvelleVille form input{
-    margin-bottom:10px;
+    margin-bottom:17px;
     text-align:center;
     outline:none;
     transition:background-color 0.5s;
@@ -166,3 +199,36 @@
     color:#0a9496
 }
 
+
+
+
+/********************INSERTION NOUVELLE VILLE.PHP***************/
+
+.containerAjoutNouvelleVille{
+    background-image:url(img/ville2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+
+.containerAjoutNouvelleVille p{
+    font-size:var(--fontSizeTitre);
+    color:#fff;
+    font-family:var(--fontFamilyCursive)
+}
+
+
+/***********************MODIFIER FORMULAIRE.PHP ****************/
+
+.containerMofifierVille{
+    background-image: url(img/ville4.jpg);
+    background-size: cover;
+    bacground-repeat:no-repeat;
+    min-height:100vh;
+}

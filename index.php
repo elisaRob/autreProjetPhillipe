@@ -1,5 +1,4 @@
-<?php
-
+<?php   
 require_once('header.php');
 ?>
 
@@ -8,7 +7,6 @@ require_once('header.php');
     <button><a href="formulaireInscriptionVille.php">Formulaire Inscription Ville</a></button>
 </div>
 
-    <?php
-
-require_once('footer.php');
+<?php
+    require_once('footer.php');
 ?>

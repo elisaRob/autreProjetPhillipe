@@ -5,12 +5,13 @@ require_once('bdd.php');
 
 $bdd=connexionBDD();
 
-$recupererVilleEtCodePostaux="SELECT ville_id,ville_nom,ville_code_postal FROM villes_france_free LIMIT 10";
+$recupererVilleEtCodePostaux="SELECT ville_id,ville_nom,ville_code_postal FROM villes_france_free";
 $requete=$bdd->prepare($recupererVilleEtCodePostaux);
 $requete->execute();
 
 ?>
 <div class="recupererVilleEtCodePostaux">
+<p class='global'>Pour Revenir au Menu Principal: <a class='globalLien' href="index.php">Cliquez ici</a></p>
 
 <table>
         <thead>
@@ -41,6 +42,6 @@ while ($villeEtCodePostauxRecupere = $requete->fetch(PDO::FETCH_ASSOC)) {
     </div>
 
     
-    <?php
+<?php
     require_once('footer.php');
    

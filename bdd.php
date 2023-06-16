@@ -3,7 +3,7 @@
 
 function connexionBDD(){
 	$host = "localhost";
-	$db_name = "ville_france";
+	$db_name = "villefrance";
 	$username = "root";
 	$password = "";
 	$connexion = False;
