@@ -20,3 +20,9 @@ $requete=$bdd->prepare($requeteSqlInsertion);
 $requete->bindvalue(':ville',$ville);
 $requete->bindvalue(':departement',$departement);
 $requete->execute();
+
+?>
+
+<div class="containerAjoutNouvelleVille">
+    <p>Bonjour vous avez bien rajoutés votre ville</p>
+</div>

@@ -6,7 +6,7 @@ require_once('bdd.php');
 ?>
 
 <div class="containerFormulaireInscriptionNouvelleVille">
-    <form action="recuperationNouvelleVille.php" method="POST">
+    <form action="insertionNouvelleVille.php" method="POST">
         <label for="ville">Entrez le nom de votre ville</label>
         <input type="text" id="ville" name="ville">
 
