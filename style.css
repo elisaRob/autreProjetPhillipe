@@ -123,6 +123,24 @@
     font-size:var(--fontSizeContenu)
 }
 
+.pagination{
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15%;
+    
+}
+
+.pagination a{
+    padding:0 2px;
+    font-size:calc(8px + 1vw);
+    backdrop-filter:blur(5px)
+}
+
+.pagination .active{
+    color:rgb(214, 22, 22)
+}
+
  @media screen and (max-width:444px){
     .recupererVilleEtCodePostaux th{
         font-size:var(--fontSizeContenu)
