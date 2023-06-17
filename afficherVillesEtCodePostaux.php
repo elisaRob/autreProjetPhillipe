@@ -5,7 +5,7 @@ require_once('bdd.php');
 
 $bdd=connexionBDD();
 
-$recupererVilleEtCodePostaux="SELECT ville_id,ville_nom,ville_code_postal FROM villes_france_free";
+$recupererVilleEtCodePostaux="SELECT ville_id,ville_nom,ville_code_postal FROM villes_france_free LIMIT 10";
 $requete=$bdd->prepare($recupererVilleEtCodePostaux);
 $requete->execute();
 

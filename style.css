@@ -99,12 +99,15 @@
     background-size: cover;
     /* background-repeat: no-repeat; */
     min-height:100vh;
-    padding-top:10px
+    padding-top:10px;
+    padding-left:10px;
+   
 }
 
 .recupererVilleEtCodePostaux table{
     width:90%;
     border-collapse:collapse;
+    backdrop-filter:blur(5px)
   
    
 }
@@ -119,6 +122,12 @@
     text-align:center;
     font-size:var(--fontSizeContenu)
 }
+
+ @media screen and (max-width:444px){
+    .recupererVilleEtCodePostaux th{
+        font-size:var(--fontSizeContenu)
+    }
+ }
 
 /*************************************FORMULAIRE INSCRIPTION.PHP ****************************/
 
@@ -252,6 +261,8 @@
 .containerMofifierVille form label{
     font-size:var(--fontSizeContenu);
     margin-bottom:3px;
+    color:white;
+    backdrop-filter:blur(3px)
 }
 
 .containerMofifierVille form input{
@@ -259,7 +270,8 @@
     padding:5px 10px;
     text-align:center;
     outline:none;
-    transition:background-color 0.8s
+    transition:background-color 0.8s;
+   
 }
 
 .containerMofifierVille form input:focus{
@@ -277,6 +289,7 @@
     position:relative;
     z-index:23;
     overflow:hidden;
+    color:white;
 }
 
 .containerMofifierVille form button:before{
@@ -313,7 +326,8 @@
 .containerTraitementModifier p:nth-child(1){
     color:white;
     font-size:var(--fontSizeTitre);
-    backdrop-filter:blur(5px)
+    backdrop-filter:blur(5px);
+    text-align:center;
 }
 
 .containerTraitementModifier p:nth-child(2) a{
@@ -336,4 +350,5 @@
     color:white;
     font-size:var(--fontSizeTitre);
     backdrop-filter:blur(5px);
+    text-align:center;
 }
