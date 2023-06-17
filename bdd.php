@@ -1,6 +1,5 @@
 <?php
 
-
 function connexionBDD(){
 	$host = "localhost";
 	$db_name = "villefrance";

@@ -14,3 +14,10 @@ $requete=$bdd->prepare($requete);
 $requete->bindvalue(':id',$id);
 $requete->execute();
 
+?>
+
+<div class=" containerTraitementSupprimer">
+    <p>Votre modification a bien été enregistrée</p>
+    <p class='global'>Pour Revenir au Menu Principal: <a class='globalLien' href="index.php">Cliquez ici</a></p>
+</div>
+

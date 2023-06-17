@@ -1,8 +1,6 @@
 <?php
-
 require_once('header.php');
 require_once('bdd.php');
-
 ?>
 
 <div class="containerFormulaireInscriptionNouvelleVille">
@@ -18,6 +16,5 @@ require_once('bdd.php');
         <p class='global'>Pour Revenir au Menu Principal: <a class='globalLien' href="index.php">Cliquez ici</a></p>
     </form>
 </div>
-
 <?php
 require_once('footer.php');

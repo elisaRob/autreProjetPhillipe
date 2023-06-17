@@ -18,3 +18,10 @@ $recuperationDonnee->bindvalue(':nom',$nomVille);
 $recuperationDonnee->bindvalue(':codePostal',$codePostal);
 
 $recuperationDonnee->execute();
+
+?>
+
+<div class="containerTraitementModifier">
+    <p>Votre modification a bien été enregistrée</p>
+    <p class='global'>Pour Revenir au Menu Principal: <a class='globalLien' href="index.php">Cliquez ici</a></p>
+</div>

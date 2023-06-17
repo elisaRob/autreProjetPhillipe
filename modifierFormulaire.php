@@ -32,6 +32,7 @@ if($ville){
             <input type="text" value="<?=$ville['ville_code_postal']?>" name="codePostalVille" id="codePostalVille">
 
             <button type="submit">Validez</button>
+            <p class='global'>Pour Revenir au Menu Principal: <a class='globalLien' href="index.php">Cliquez ici</a></p>
         </form>
     </div>
 <?php
